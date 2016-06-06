@@ -1,0 +1,66 @@
+
+<!-- saved from url=(0058)https://www.w3.org/2001/04/wsws-proceedings/uche/wsdl.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><title>Sample WSDL document</title><link type="text/css" rel="stylesheet" href="./wsdl_sample_files/presmain.css"></head><body><h2>Sample WSDL document</h2>
+  
+  <pre><div class="CODE">
+
+&lt;definitions name="EndorsementSearch"
+  targetNamespace="http://namespaces.snowboard-info.com"
+  xmlns:es="http://www.snowboard-info.com/EndorsementSearch.wsdl"
+  xmlns:esxsd="http://schemas.snowboard-info.com/EndorsementSearch.xsd"
+  xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+  xmlns="http://schemas.xmlsoap.org/wsdl/"
+&gt;
+
+  &lt;!-- omitted types section with content model schema info --&gt;
+
+  &lt;message name="GetEndorsingBoarderRequest"&gt;
+    &lt;part name="body" element="esxsd:GetEndorsingBoarder"/&gt;
+  &lt;/message&gt;
+
+  &lt;message name="GetEndorsingBoarderResponse"&gt;
+    &lt;part name="body" element="esxsd:GetEndorsingBoarderResponse"/&gt;
+  &lt;/message&gt;
+
+  &lt;portType name="GetEndorsingBoarderPortType"&gt;
+    &lt;operation name="GetEndorsingBoarder"&gt;
+      &lt;input message="es:GetEndorsingBoarderRequest"/&gt;
+      &lt;output message="es:GetEndorsingBoarderResponse"/&gt;
+      &lt;fault message="es:GetEndorsingBoarderFault"/&gt;
+    &lt;/operation&gt;
+  &lt;/portType&gt;
+
+  &lt;binding name="EndorsementSearchSoapBinding"
+           type="es:GetEndorsingBoarderPortType"&gt;
+    &lt;soap:binding style="document"
+                  transport="http://schemas.xmlsoap.org/soap/http"/&gt;
+    &lt;operation name="GetEndorsingBoarder"&gt;
+      &lt;soap:operation
+        soapAction="http://www.snowboard-info.com/EndorsementSearch"/&gt;
+      &lt;input&gt;
+        &lt;soap:body use="literal"
+          namespace="http://schemas.snowboard-info.com/EndorsementSearch.xsd"/&gt;
+      &lt;/input&gt;
+      &lt;output&gt;
+        &lt;soap:body use="literal"
+          namespace="http://schemas.snowboard-info.com/EndorsementSearch.xsd"/&gt;
+      &lt;/output&gt;
+      &lt;fault&gt;
+        &lt;soap:body use="literal"
+          namespace="http://schemas.snowboard-info.com/EndorsementSearch.xsd"/&gt;
+      &lt;/fault&gt;
+    &lt;/operation&gt;
+  &lt;/binding&gt;
+
+  &lt;service name="EndorsementSearchService"&gt;
+    &lt;documentation&gt;snowboarding-info.com Endorsement Service&lt;/documentation&gt; 
+    &lt;port name="GetEndorsingBoarderPort"
+          binding="es:EndorsementSearchSoapBinding"&gt;
+      &lt;soap:address location="http://www.snowboard-info.com/EndorsementSearch"/&gt;
+    &lt;/port&gt;
+  &lt;/service&gt;
+
+&lt;/definitions&gt;
+
+  </div></pre>
+<hr><a href="https://www.w3.org/2001/04/wsws-proceedings/uche/whatisrdf.html">Prev 	</a><a href="https://www.w3.org/2001/04/wsws-proceedings/uche/index.html">TOC</a><a href="https://www.w3.org/2001/04/wsws-proceedings/uche/wsdlrdf.html">	 Next</a></body></html>

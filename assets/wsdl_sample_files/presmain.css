@@ -1,0 +1,52 @@
+
+      BODY            {background: white}
+      TR.xpath {background-color: #6666cc;}
+      TR.rdf {background-color: #cc6666;}
+      H1              {font-size: 200%;
+                       font-family: verdana, helvetica, arial, sans-serif;
+                       color: black;
+                       text-align: center}
+      H2              {font-size: 175%;
+                       color: black;
+                       font-weight: bold;
+                       font-family: times, serif;
+                       text-align: center}
+      H3              {font-size: 150%;
+                       font-family: times, serif;
+                       color: darkblue;
+                       text-align: left}
+      P                {font-family: verdana, helvetica, arial, sans-serif;
+                       font-size: 100%;
+                       color: black;}
+      I                {font-family: verdana, helvetica, arial, sans-serif;
+                       font-size: 100%;
+                       color: black;}
+      LI  {font-family: verdana, helvetica, arial, sans-serif;
+                       font-size: 100%;
+                       color: blue;}
+      DIV.BULLETITEM  {font-family: verdana, helvetica, arial, sans-serif;
+                       font-size: 150%;
+                       color: blue;}
+      DIV.CODE        {font-family: monospace;
+                       font-size: 120%;
+                       font-weight: bold;
+                       color: darkblue;}
+      DIV.FULLPAGE    {font-family: verdana, helvetica, arial, sans-serif;
+                       font-size: 300%;
+                       height: 400;
+                       color: darkred;
+                       vertical-align: center;
+                       text-align: center;}
+      DIV.TITLEBIG    {font-family: verdana, helvetica, arial, sans-serif;
+                       font-weight: 150%;
+                       color: black;
+                       text-align: center;}
+      DIV.TITLEMED    {font-family: verdana, helvetica, arial, sans-serif;
+                       font-size: 100%;
+                       color: black;
+                       text-align: center;}
+      DIV.TITLERIGHT  {font-family: verdana, helvetica, arial, sans-serif;
+                       font-size: 80%;
+                       color: black;
+                       text-align: right;}
+  
